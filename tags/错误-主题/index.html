@@ -171,56 +171,10 @@
 </blockquote>
 <p>A.脚本安装。。。失败</p>
 <p>B.手动安装。。。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ npm i -S hexo-generator-search hexo-generator-feed hexo-renderer-less hexo-autoprefixer hexo-generator-json-content hexo-recommended-posts</span><br><span class="line">npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue</span><br><span class="line">npm WARN deprecated browserslist@1.0.1: Browserslist 2 could fail on reading Browserslist &gt;3.0 config used in other tools.</span><br><span class="line">npm WARN deprecated hoek@2.16.3: The major version is no longer supported. Please update to 4.x or newer</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br><span class="line"></span><br><span class="line">+ hexo-generator-search@2.3.0</span><br><span class="line">+ hexo-recommended-posts@1.0.3</span><br><span class="line">+ hexo-generator-json-content@3.0.1</span><br><span class="line">+ hexo-generator-feed@1.2.2</span><br><span class="line">+ hexo-renderer-less@0.2.0</span><br><span class="line">+ hexo-autoprefixer@1.0.0</span><br><span class="line">updated 6 packages and audited 10377 packages in 12.355s</span><br><span class="line">found 6 vulnerabilities (1 low, 4 moderate, 1 high)</span><br><span class="line">  run `npm audit fix` to fix them, or `npm audit` for details</span><br></pre></td></tr></table></figure>
-<p>emmm，什么什么版本太低？？那就一个一个来吧</p>
-<p>上网搜了下<code>minimatch 3.0.2</code></p>
-<p>查到了这个</p>
-<blockquote>
-<p><a href="https://segmentfault.com/q/1010000005749798" target="_blank" rel="noopener">https://segmentfault.com/q/1010000005749798</a></p>
-</blockquote>
-<p>步骤没看懂，又看了看评论</p>
-<p>评论也没看懂，好在有一个案例</p>
-<blockquote>
-<p><a href="http://www.zhoulujun.cn/zhoulujun/html/webfront/ECMAScript/nodejs/7842.html" target="_blank" rel="noopener">http://www.zhoulujun.cn/zhoulujun/html/webfront/ECMAScript/nodejs/7842.html</a></p>
-</blockquote>
-<p>案例也没看懂，但是有一条命令可以试一试</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g minimatch</span><br></pre></td></tr></table></figure>
-<p>执行结果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g minimatch</span><br><span class="line">+ minimatch@3.0.4</span><br><span class="line">updated 1 package in 3.289s</span><br></pre></td></tr></table></figure>
-<p>再试试手动安装？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ npm i -S hexo-generator-search hexo-generator-feed hexo-renderer-less hexo-autoprefixer hexo-generator-json-content hexo-recommended-posts</span><br><span class="line">npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExpDoS issue</span><br><span class="line">npm WARN deprecated browserslist@1.0.1: Browserslist 2 could fail on reading Browserslist &gt;3.0 config used in other tools.</span><br><span class="line">npm WARN deprecated hoek@2.16.3: The major version is no longer supported. Please update to 4.x ornewer</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br><span class="line"></span><br><span class="line">+ hexo-renderer-less@0.2.0</span><br><span class="line">+ hexo-generator-feed@1.2.2</span><br><span class="line">+ hexo-generator-search@2.3.0</span><br><span class="line">+ hexo-autoprefixer@1.0.0</span><br><span class="line">+ hexo-recommended-posts@1.0.3</span><br><span class="line">+ hexo-generator-json-content@3.0.1</span><br><span class="line">updated 6 packages and audited 10377 packages in 14.023s</span><br><span class="line">found 6 vulnerabilities (1 low, 4 moderate, 1 high)</span><br><span class="line">  run `npm audit fix` to fix them, or `npm audit` for details</span><br></pre></td></tr></table></figure>
-<p>还是不行</p>
-<p>通过软件翻译了一下</p>
-<p>看来是漏洞的事</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ npm audit fix</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br><span class="line"></span><br><span class="line">up to date in 3.357s</span><br><span class="line">fixed 0 of 6 vulnerabilities in 10377 scanned packages</span><br><span class="line">  6 vulnerabilities required manual review and could not be updated</span><br></pre></td></tr></table></figure>
-<p>嗯</p>
-<p>修复了零个文件</p>
-<p>再翻译最后一句</p>
-<blockquote>
-<p>漏洞需要人工审核，无法更新</p>
-</blockquote>
-<p>好吧，那我就更新到最新的版本不就完了</p>
-<blockquote>
-<p><a href="https://blog.csdn.net/b422761838/article/details/77543249" target="_blank" rel="noopener">https://blog.csdn.net/b422761838/article/details/77543249</a></p>
-</blockquote>
-<p>根据步骤查到了我的版本</p>
-<p>升级</p>
-<p>嗯，看来还真缺东西</p>
-<p>因此还有一部关键的一步：</p>
-<blockquote>
-<p>复制C:\Users{你的Windows用户名}\AppData\Roaming\npm\node_modules\npm下的文件到你的 NodeJS安装目录下的 \node_modules\npm 中，覆盖掉原有的全部文件</p>
-</blockquote>
-<blockquote>
-<p>在window下查看nodeJS安装路径： where node</p>
-</blockquote>
-<p>这一步没敢落下，毕竟真缺这东西啊</p>
-<p>找到两个文件夹的位置，复制，覆盖</p>
-<p>再手动安装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$ npm i -S hexo-generator-search hexo-generator-feed hexo-renderer-less hexo-autoprefixer hexo-generator-json-content hexo-recommended-posts</span><br><span class="line">npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExpDoS issue</span><br><span class="line">npm WARN deprecated browserslist@1.0.1: Browserslist 2 could fail on reading Browserslist &gt;3.0 config used in other tools.</span><br><span class="line">npm WARN deprecated hoek@2.16.3: The major version is no longer supported. Please update to 4.x ornewer</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br><span class="line"></span><br><span class="line">+ hexo-renderer-less@0.2.0</span><br><span class="line">+ hexo-generator-json-content@3.0.1</span><br><span class="line">+ hexo-autoprefixer@1.0.0</span><br><span class="line">+ hexo-generator-feed@1.2.2</span><br><span class="line">+ hexo-generator-search@2.3.0</span><br><span class="line">+ hexo-recommended-posts@1.0.3</span><br><span class="line">updated 6 packages in 29.535s</span><br></pre></td></tr></table></figure>
-<p>嗯</p>
-<p>不报错了，剩下的就是根据官方说明书往下走了</p>
-<p>换一个主题都这么费劲，看来真得学好英语。</p>
-
+        
+            <div class="readmore">
+                <a href="/2018/10/18/Hexo-主题更换/" class="flat-box">READ MORE</a>
+            </div>
         
 
         
