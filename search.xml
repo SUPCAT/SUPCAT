@@ -3,6 +3,36 @@
   
     
     <entry>
+      <title>简单的编码write up</title>
+      <link href="/2018/10/21/%E7%AE%80%E5%8D%95%E7%9A%84%E7%BC%96%E7%A0%81write-up/"/>
+      <url>/2018/10/21/%E7%AE%80%E5%8D%95%E7%9A%84%E7%BC%96%E7%A0%81write-up/</url>
+      
+        <content type="html"><![CDATA[<p>将文本复制下来</p><p>base64解密数次</p><p>得到flag</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    <entry>
+      <title> 可爱的图片write up</title>
+      <link href="/2018/10/21/%E5%8F%AF%E7%88%B1%E7%9A%84%E5%9B%BE%E7%89%87write-up/"/>
+      <url>/2018/10/21/%E5%8F%AF%E7%88%B1%E7%9A%84%E5%9B%BE%E7%89%87write-up/</url>
+      
+        <content type="html"><![CDATA[<p>使用WinHex打开图片</p><p>查找jpg的结束点FF D9</p><p>将剩下部分切出新建文件</p><p>并根据起始点为 50 4B 将文件后缀修改为rar</p><p>打开发现加密的文件 flag.txt</p><p>使用ARCHPR 4.54 Professional Edition 对压缩包进行爆破</p><p>口令长度依次递增</p><p>在口令长度为5的情况下 28s 131sm 解出口令 </p><p>打开加密文件，文件内容指向一个网址。</p><p>复制，粘贴并转到</p><p>得到flag</p><pre><code>ps:如果提示压缩包损坏可以使用压缩包自带工具进行修复</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ctf </tag>
+            
+            <tag> 图片隐写术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>更换动态背景</title>
       <link href="/2018/10/18/%E6%9B%B4%E6%8D%A2%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF/"/>
       <url>/2018/10/18/%E6%9B%B4%E6%8D%A2%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF/</url>
