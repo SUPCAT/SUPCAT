@@ -38,8 +38,8 @@
     
     <entry>
       <title>PHP1</title>
-      <link href="/2018/10/21/PHP%E7%89%B9%E6%80%A71-write-up/"/>
-      <url>/2018/10/21/PHP%E7%89%B9%E6%80%A71-write-up/</url>
+      <link href="/2018/10/21/PHP1/"/>
+      <url>/2018/10/21/PHP1/</url>
       
         <content type="html"><![CDATA[<p>根据<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">if (($user != $pass) and (md5($user) == $pass)) &#123; </span><br><span class="line">echo $flag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>可知 提交的用户名和密码不能相同，但是需要保证user用MD5加密后和pass相同 就能得到flag。</p><p>因为PHP在处理哈希字符串时，会利用 ”!=” 或 ”==” 来对哈希值进行比较，它把每一个以 ”0e” 开头的哈希值都解释为0，所以user变量只要提交MD5加密后值为Oe开头的字符串就可以拿到flag</p><p>在这个网址里找到一些符合规则的字符串</p><blockquote><p><a href="https://www.ohlinge.cn/php/0e_md5.html" target="_blank" rel="noopener">https://www.ohlinge.cn/php/0e_md5.html</a></p></blockquote><p>例 : <code>QNKCDZO</code></p><p>因此 </p><p><img src="https://i.imgur.com/YoKlJXr.png" alt=""></p><p>转到</p><p>得到flag</p>]]></content>
       
@@ -55,8 +55,8 @@
     
     <entry>
       <title>简单的编码</title>
-      <link href="/2018/10/21/%E7%AE%80%E5%8D%95%E7%9A%84%E7%BC%96%E7%A0%81write-up/"/>
-      <url>/2018/10/21/%E7%AE%80%E5%8D%95%E7%9A%84%E7%BC%96%E7%A0%81write-up/</url>
+      <link href="/2018/10/21/%E7%AE%80%E5%8D%95%E7%9A%84%E7%BC%96%E7%A0%81/"/>
+      <url>/2018/10/21/%E7%AE%80%E5%8D%95%E7%9A%84%E7%BC%96%E7%A0%81/</url>
       
         <content type="html"><![CDATA[<p>将文本复制下来<br><a id="more"></a><br>base64解密数次</p><blockquote><p>（你就慢慢解吧，解来解去就越来越短，最后就是flag了 我第一次解出这道题是因为我无聊的将flag这四个字母连续用各种加密方式加密了10次发现的与base64相同，，真辛酸）</p></blockquote><p>base64解密网址&gt; <a href="https://www.sojson.com/base64.html" target="_blank" rel="noopener">https://www.sojson.com/base64.html</a></p><p>得到flag</p>]]></content>
       
@@ -66,8 +66,8 @@
     
     <entry>
       <title> 可爱的图片write up</title>
-      <link href="/2018/10/21/%E5%8F%AF%E7%88%B1%E7%9A%84%E5%9B%BE%E7%89%87write-up/"/>
-      <url>/2018/10/21/%E5%8F%AF%E7%88%B1%E7%9A%84%E5%9B%BE%E7%89%87write-up/</url>
+      <link href="/2018/10/21/%E5%8F%AF%E7%88%B1%E7%9A%84%E5%9B%BE%E7%89%87/"/>
+      <url>/2018/10/21/%E5%8F%AF%E7%88%B1%E7%9A%84%E5%9B%BE%E7%89%87/</url>
       
         <content type="html"><![CDATA[<p>使用WinHex打开图片<br><a id="more"></a></p><blockquote><p><a href="http://note.youdao.com/noteshare?id=3dd25759de278a8468c68f498b77b021" target="_blank" rel="noopener">http://note.youdao.com/noteshare?id=3dd25759de278a8468c68f498b77b021</a></p></blockquote><p>先将软件改为中文</p><blockquote><p>help==&gt;Setup==&gt;chinese</p></blockquote><p>然后</p><blockquote><p>查找==》查找十六进制数值==》FF</p></blockquote><blockquote><p>查找==》查找十六进制数值==》D9</p></blockquote><p>FF D9 为jpg的结束点</p><p>所以搜完之后从下往上找 FF D9 挨着的</p><p><img src="https://i.imgur.com/0PcIREI.png" alt=""></p><p>将最后一个FF D9后边的所有十六进制数据</p><blockquote><p>选中==》右键==》编辑==》复制选块==》至新文件==》保存</p></blockquote><p>因为新文件开头是 50 4B 所以这是rar文件 所以将刚才提出的文件后缀改为rar即<code>未命名.rar</code></p><p>如果改不了后缀则</p><blockquote><p>我的电脑==》查看==》文件拓展名</p></blockquote><p><img src="https://i.imgur.com/RIMLTLh.png" alt=""></p><p>就能改了</p><p>打开发现加密的文件 flag.txt</p><p>使用ARCHPR 4.54 Professional Edition 对压缩包进行爆破</p><blockquote><p><a href="http://note.youdao.com/noteshare?id=58d1f75a2ebd75fe3ba3bf4e6b1f1b9f" target="_blank" rel="noopener">http://note.youdao.com/noteshare?id=58d1f75a2ebd75fe3ba3bf4e6b1f1b9f</a></p></blockquote><p>口令长度依次递增</p><p>在口令长度为5的情况下 28s 131sm 解出口令 </p><p><img src="https://i.imgur.com/hkpTjUb.png" alt=""></p><p>打开加密文件，文件内容指向一个网址。</p><p>复制，粘贴并转到</p><p>得到flag</p><pre><code>ps:如果提示压缩包损坏可以使用压缩包自带工具进行修复</code></pre>]]></content>
       
