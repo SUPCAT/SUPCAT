@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Tag: ctf | Supcat&#39;s Blog</title>
+  <title>PHP2 | Supcat&#39;s Blog</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <meta name="HandheldFriendly" content="True" />
@@ -136,27 +136,16 @@
     <div class="l_body">
     <div class='container clearfix'>
         <div class='l_main'>
+            <article id="post-PHP2" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    <section class='meta'>
+        <h1 class="title">
             
-    <script>
-        window.subData= { title:'tag : ctf'}
-    </script>
-
-
-<section class="post-list">
-    
-    
-        <div class='post-wrapper'>
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2018/10/21/可爱的图片write-up/">
-                
-                     可爱的图片write up
-                
-            </a>
-        </h2>
+                PHP2
+            
+        </h1>
         <time>
-            <i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;2018-10-21
+            <i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp;2018-10-22&nbsp;&nbsp;
+            <i class="fa fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
         </time>
         
     
@@ -168,29 +157,137 @@
     </section>
 
     <section class="article typo">
-        <p>使用WinHex打开图片<br>
-        
-            <div class="readmore">
-                <a href="/2018/10/21/可爱的图片write-up/" class="flat-box">READ MORE</a>
-            </div>
-        
 
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/ctf/"><i class="fa fa-tag fa-fw"></i>&nbsp;ctf</a>
-                
-                    <a href="/tags/图片隐写术/"><i class="fa fa-tag fa-fw"></i>&nbsp;图片隐写术</a>
-                
-            </div>
-        
-    </section>
-</article>
+        <div class="article-entry" itemprop="articleBody">
+            <p>根据<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if ( ($user != $pass) and ( md5($user) == md5($pass) )) &#123; </span><br><span class="line">   echo $flag;</span><br></pre></td></tr></table></figure></p>
+<p>可知 提交的user和pass不同但是他们的MD5相同</p>
+<p>所以</p>
+<blockquote>
+<p><a href="https://www.ohlinge.cn/php/0e_md5.html" target="_blank" rel="noopener">https://www.ohlinge.cn/php/0e_md5.html</a></p>
+</blockquote>
+<p>找两个加密后0e开头的字符串就好了</p>
+<p><img src="https://i.imgur.com/LHY4Euy.png" alt=""></p>
+<p>提交</p>
+<p>得到flag</p>
 
         </div>
-    
-</section>
 
+        
+            <div class="article-tags tags">
+                
+                    <a href="/tags/PHP/"><i class="fa fa-tag fa-fw" aria-hidden="true"></i>&nbsp;PHP</a>
+                
+            </div>
+        
+
+        
+            <div class="prev-next">
+                
+                    <section class="prev" >
+                        <span class="art-item-left">
+                            <h6><i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp;上一篇</h6>
+                            <h4>
+                                <a href="/2018/10/22/PHP3/" rel="prev" title="PHP3">
+                                  
+                                      PHP3
+                                  
+                                </a>
+                            </h4>
+                            
+                                <h6 class="tags">
+                                    
+                                        <i class="fa fa-tag fa-fw"></i>PHP
+                                    
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一篇&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2018/10/21/PHP特性1-write-up/" rel="prev" title="PHP1">
+                                    
+                                        PHP1
+                                    
+                                </a>
+                            </h4>
+                            
+                                <h6 class="tags">
+                                    
+                                        <i class="fa fa-tag fa-fw"></i>php
+                                    
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+
+    </section>
+
+</article>
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+    <article class="post white-box comments">
+        <section class="article typo">
+
+            
+                
+
+    <div class="recommended_posts">
+        <h4><i class="fa fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;你可能感兴趣的文章</h4>
+        <ul>
+            
+                <li><a href="http://yoursite.com/2018/10/22/PHP3/">PHP3</a></li>
+            
+                <li><a href="http://yoursite.com/2018/10/21/PHP特性1-write-up/">PHP1</a></li>
+            
+                <li><a href="http://yoursite.com/2018/10/21/简单的编码write-up/">简单的编码</a></li>
+            
+                <li><a href="http://yoursite.com/2018/10/21/可爱的图片write-up/"> 可爱的图片write up</a></li>
+            
+                <li><a href="http://yoursite.com/2018/10/18/更换动态背景/">更换动态背景</a></li>
+            
+        </ul>
+    </div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+
+
+            
+
+            
+
+                
+
+                
+                    <h4><i class="fa fa-comments fa-fw" aria-hidden="true"></i>&nbsp;LiveRe评论</h4>
+                    <section id="comments">
+                        <div id="lv-container" data-id="city" data-uid="MTAyMC80MDM2OC8xNjg5NQ==">
+                            <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+                        </div>
+                    </section>
+                
+
+                
+            
+
+        </section>
+    </article>
+
+
+<script>
+    window.subData = {
+        title: 'PHP2',
+        tools: true
+    }
+</script>
 
 
         </div>
@@ -420,6 +517,21 @@
 <script src="/js/search.js"></script>
 <script src="/js/app.js"></script>
 
+
+    
+    
+        <script type="text/javascript">
+           (function(d, s) {
+               var j, e = d.getElementsByTagName(s)[0];
+               if (typeof LivereTower === 'function') { return; }
+               j = d.createElement(s);
+               j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+               j.async = true;
+               e.parentNode.insertBefore(j, e);
+           })(document, 'script');
+        </script>
+    
+    
 
 
     <script>setLoadingBarProgress(100);</script>

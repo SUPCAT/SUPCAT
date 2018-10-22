@@ -159,14 +159,43 @@
     <section class="article typo">
 
         <div class="article-entry" itemprop="articleBody">
-            <p>使用WinHex打开图片</p>
-<p>查找jpg的结束点FF D9</p>
-<p>将剩下部分切出新建文件</p>
-<p>并根据起始点为 50 4B 将文件后缀修改为rar</p>
+            <p>使用WinHex打开图片<br><a id="more"></a></p>
+<blockquote>
+<p><a href="http://note.youdao.com/noteshare?id=3dd25759de278a8468c68f498b77b021" target="_blank" rel="noopener">http://note.youdao.com/noteshare?id=3dd25759de278a8468c68f498b77b021</a></p>
+</blockquote>
+<p>先将软件改为中文</p>
+<blockquote>
+<p>help==&gt;Setup==&gt;chinese</p>
+</blockquote>
+<p>然后</p>
+<blockquote>
+<p>查找==》查找十六进制数值==》FF</p>
+</blockquote>
+<blockquote>
+<p>查找==》查找十六进制数值==》D9</p>
+</blockquote>
+<p>FF D9 为jpg的结束点</p>
+<p>所以搜完之后从下往上找 FF D9 挨着的</p>
+<p><img src="https://i.imgur.com/0PcIREI.png" alt=""></p>
+<p>将最后一个FF D9后边的所有十六进制数据</p>
+<blockquote>
+<p>选中==》右键==》编辑==》复制选块==》至新文件==》保存</p>
+</blockquote>
+<p>因为新文件开头是 50 4B 所以这是rar文件 所以将刚才提出的文件后缀改为rar即<code>未命名.rar</code></p>
+<p>如果改不了后缀则</p>
+<blockquote>
+<p>我的电脑==》查看==》文件拓展名</p>
+</blockquote>
+<p><img src="https://i.imgur.com/RIMLTLh.png" alt=""></p>
+<p>就能改了</p>
 <p>打开发现加密的文件 flag.txt</p>
 <p>使用ARCHPR 4.54 Professional Edition 对压缩包进行爆破</p>
+<blockquote>
+<p><a href="http://note.youdao.com/noteshare?id=58d1f75a2ebd75fe3ba3bf4e6b1f1b9f" target="_blank" rel="noopener">http://note.youdao.com/noteshare?id=58d1f75a2ebd75fe3ba3bf4e6b1f1b9f</a></p>
+</blockquote>
 <p>口令长度依次递增</p>
 <p>在口令长度为5的情况下 28s 131sm 解出口令 </p>
+<p><img src="https://i.imgur.com/hkpTjUb.png" alt=""></p>
 <p>打开加密文件，文件内容指向一个网址。</p>
 <p>复制，粘贴并转到</p>
 <p>得到flag</p>
@@ -191,9 +220,9 @@
                         <span class="art-item-left">
                             <h6><i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp;上一篇</h6>
                             <h4>
-                                <a href="/2018/10/21/简单的编码write-up/" rel="prev" title="简单的编码write up">
+                                <a href="/2018/10/21/简单的编码write-up/" rel="prev" title="简单的编码">
                                   
-                                      简单的编码write up
+                                      简单的编码
                                   
                                 </a>
                             </h4>
@@ -247,15 +276,15 @@
         <h4><i class="fa fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;你可能感兴趣的文章</h4>
         <ul>
             
-                <li><a href="http://yoursite.com/2018/10/21/简单的编码write-up/">简单的编码write up</a></li>
+                <li><a href="http://yoursite.com/2018/10/21/PHP特性1-write-up/">PHP1</a></li>
+            
+                <li><a href="http://yoursite.com/2018/10/21/简单的编码write-up/">简单的编码</a></li>
             
                 <li><a href="http://yoursite.com/2018/10/18/更换动态背景/">更换动态背景</a></li>
             
                 <li><a href="http://yoursite.com/2018/10/18/Hexo-主题更换/">Hexo 主题更换</a></li>
             
                 <li><a href="http://yoursite.com/2018/10/17/Hello-World/">Hello World</a></li>
-            
-                <li><a href="http://yoursite.com/2018/10/17/text/">test</a></li>
             
         </ul>
     </div>
@@ -382,7 +411,7 @@
     <section class='m_widget tagcloud'>
         <div class="header"><i class="fa fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;标签</div>
         <div class='content'>
-            <a href="/tags/First/" style="font-size: 14px; color: #999">First</a> <a href="/tags/ctf/" style="font-size: 14px; color: #999">ctf</a> <a href="/tags/主题/" style="font-size: 24px; color: #555">主题</a> <a href="/tags/动态背景/" style="font-size: 14px; color: #999">动态背景</a> <a href="/tags/图片隐写术/" style="font-size: 14px; color: #999">图片隐写术</a> <a href="/tags/更换/" style="font-size: 14px; color: #999">更换</a> <a href="/tags/错误/" style="font-size: 14px; color: #999">错误</a>
+            <a href="/tags/First/" style="font-size: 14px; color: #999">First</a> <a href="/tags/PHP/" style="font-size: 24px; color: #555">PHP</a> <a href="/tags/ctf/" style="font-size: 14px; color: #999">ctf</a> <a href="/tags/php/" style="font-size: 14px; color: #999">php</a> <a href="/tags/主题/" style="font-size: 24px; color: #555">主题</a> <a href="/tags/动态背景/" style="font-size: 14px; color: #999">动态背景</a> <a href="/tags/图片隐写术/" style="font-size: 14px; color: #999">图片隐写术</a> <a href="/tags/更换/" style="font-size: 14px; color: #999">更换</a> <a href="/tags/错误/" style="font-size: 14px; color: #999">错误</a>
         </div>
     </section>
 
