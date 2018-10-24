@@ -31,9 +31,8 @@
   </script>
 </head>
 
-{% if theme.canvas_nest %}
+<theme.canvas_nest>
 <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-{% endif %}
 <body>
   <div id="loading-bar-wrapper">
   <div id="loading-bar"></div>
@@ -202,22 +201,6 @@
 <div class='content'>
     <ul class="entry">
     
-        <li><a class="flat-box" target="_blank" href="https://ccoooss.com">
-            <div class='name'>ClassicOldSong</div>
-        </a></li>
-    
-        <li><a class="flat-box" target="_blank" href="https://frantic1048.logdown.com/">
-            <div class='name'>Frantic1048</div>
-        </a></li>
-    
-        <li><a class="flat-box" target="_blank" href="https://hclmaster.github.io/">
-            <div class='name'>Hclmaster</div>
-        </a></li>
-    
-        <li><a class="flat-box" target="_blank" href="https://whst.github.io/">
-            <div class='name'>WANG Hsü-Tung</div>
-        </a></li>
-    
     </ul>
 </div>
 </section>
@@ -287,7 +270,7 @@
   var AZURE_SERVICE_NAME = "";
   var AZURE_INDEX_NAME = "";
   var AZURE_QUERY_KEY = "";
-  var BAIDU_API_ID = "";
+  var BAIDU_API_ID = "[object Object],[object Object],[object Object],[object Object]";
   var SEARCH_SERVICE = "hexo";
   var ROOT = "/"||"/";
   if(!ROOT.endsWith('/'))ROOT += '/';
