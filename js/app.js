@@ -15,17 +15,17 @@ var customSearch;
 		const $wrapper = $('header .wrapper');
 		const $comment = $('.s-comment', $wrapper);
 		const $toc = $('.s-toc', $wrapper);
-		const $top = $('.s-top', $wrapper);
+		const $top = $('.s-top',$wrapper);
 
 		$wrapper.find('.nav-sub .logo').text(window.subData.title);
 		let pos = document.body.scrollTop;
 		$(document, window).scroll(() => {
 			const scrollTop = $(window).scrollTop();
 			const del = scrollTop - pos;
-			if (del >= 50 && scrollTop > 100) {
+			if (del >= 20) {
 				pos = scrollTop;
 				$wrapper.addClass('sub');
-			} else if (del <= -50) {
+			} else if (del <= -20) {
 				pos = scrollTop;
 				$wrapper.removeClass('sub');
 			}
@@ -132,21 +132,13 @@ var customSearch;
 	function setTocToggle() {
 		const $toc = $('.toc-wrapper');
 		if ($toc.length === 0) return;
-		// $toc.click((e) => {
-        //     e.stopPropagation();
-        //     $toc.addClass('active');
-        // });
+		$toc.click((e) => { e.stopPropagation(); $toc.addClass('active'); });
 		$(document).click(() => $toc.removeClass('active'));
 
 		$toc.on('click', 'a', (e) => {
 			e.preventDefault();
 			e.stopPropagation();
-			if (e.target.tagName === 'A') {
-                scrolltoElement(e.target);
-            } else if (e.target.tagName === 'SPAN') {
-                scrolltoElement(e.target.parentElement);
-            }
-            $toc.removeClass('active');
+			scrolltoElement(e.target.tagName.toLowerCase === 'a' ? e.target : e.target.parentElement);
 		});
 
 		const liElements = Array.from($toc.find('li a'));
