@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-22T06:01:11.893Z</updated>
+  <updated>2018-11-01T08:58:15.972Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018年11月1日</title>
+    <link href="http://yoursite.com/2018/11/01/2018%E5%B9%B411%E6%9C%881%E6%97%A5/"/>
+    <id>http://yoursite.com/2018/11/01/2018年11月1日/</id>
+    <published>2018-11-01T08:42:00.000Z</published>
+    <updated>2018-11-01T08:58:15.972Z</updated>
+    
+    <content type="html"><![CDATA[<p>不求有功，但求无过</p><p>不求有福，但求无祸</p><p><img src="https://drscdn.500px.org/photo/278830989/m%3D900/v2?user_id=37402631&amp;webp=true&amp;sig=5d85d354087e2c30744e0009805355b24426c301b0063e71aef4b52ad104b2b6" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;不求有功，但求无过&lt;/p&gt;
+&lt;p&gt;不求有福，但求无祸&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://drscdn.500px.org/photo/278830989/m%3D900/v2?user_id=37402631&amp;amp;webp=true&amp;amp;sig=5d
+      
+    
+    </summary>
+    
+    
+      <category term="随感" scheme="http://yoursite.com/tags/%E9%9A%8F%E6%84%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>PHP3</title>
